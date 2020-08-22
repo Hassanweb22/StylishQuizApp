@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Oswald&display=swap'); */
+body {
+    font-family: 'Lemonada', cursive;
+    font-family: 'Sriracha', cursive;
+    height: 100%;
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.quiz h1 {
+    text-transform: capitalize;
+    font-family: Arial;
+    font-size: 55px !important;
+    font-weight: bold;
+    text-shadow: 6px 2px 2px rgb(0, 0, 0);
+}
+
+/* .name{
+    width: 300px;
+    padding: 18px 15px !important;
+    border: 2px solid whitesmoke !important;
+}
+
+.name:focus {
+    outline: none
+} */
+
+.choices {
+    margin-top: 45px;
+}
+
+.choices h3 {
+    color: chartreuse;
+}
+
+/*  last is the class of that div who appears at final result */
+.last h3 {
+    color: chartreuse;
+}
+
+.quiz {
+    margin-top: 7px;
+    color: #ffff00;
+    font-style: italic;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.part1,
+.part2 {
+    color: #FFC107;
+}
+
+.query {
+    height: 155px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.part2 {
+    /* background-color: chocolate; */
+    /* padding: 0px 10px !important; */
+    padding-bottom: 5px;
+    margin-left: 15px;
+}
+
+input[type=text] {
+    height: 40px;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    transition: .5s ease;
+}
+
+input[id='name']:active {
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+}
+
+input[id='name']:active {
+    outline: none !important;
+    border: none !important;
+}
+
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-first {
+
+    border: 1.5px solid #FFC107;
+    border-radius: 50%;
+    background: #FFC107;
+    padding: 30px 25px;
+    font-size: 20px !important;
+    transition: 0.4s ease;
+    color: black;
+    font-weight: 600;
+}
+
+.btn-first:hover {
+    box-shadow: 0px 5px 15px #ebbf3b;
+    color: black;
+    transform: translateY(7px);
+}
+
+#console {
+    color: #FFC107;
+    background: none;
+    border: 1.5px solid #FFC107;
+    padding: 45px 20px;
+    font-size: 20px !important;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+#console:hover {
+    background: #FFC107;
+    box-shadow: 0px 5px 15px #ebbf3b;
+    color: black;
+    transform: translateY(7px);
+}
+
+.end {
+    border-radius: 25px;
+    padding: 6px 15px;
+    background-color: #FFC107;
+    transition: 0.6s ease;
+    border: 2px solid #ebbf3b;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.end:focus {
+    outline: none;
+}
+
+.end:hover {
+    box-shadow: 0px 5px 8px #ebbf3b;
+}
+
+.questions li {
+    list-style-type: none;
+    margin: 20px 0px;
+    padding: 10px 15px;
+    border-radius: 250px;
+    color: rgb(16, 243, 16);
+    font-weight: bold;
+    border: 2px solid rgb(16, 243, 16);
+    /* background-color: rgb(142, 255, 29); */
+    cursor: pointer;
+    /* transition: 0.4s ease-out; */
+}
+
+
+.options {
+    width: initial;
+    background-color: rgb(29, 231, 29);
+    color: black !important;
+    border: 2px solid rgba(17, 238, 17, 0.404);
+    box-shadow: 0px 5px 15px rgb(29, 231, 29);
+}
+
+/* ul .option:visited {
+    background-color: rgb(29, 231, 29);
+    color: black;
+    border: 2px solid rgba(17, 238, 17, 0.404);
+    box-shadow: 0px 5px 15px rgb(29, 231, 29);
+} */
+
+.next {
+    /* background: #1fd3af; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #aacec0, #093028); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #237A57, #25cfad); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    background-color: #FFC107;
+    color: black;
+    width: 100% !important;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 250px;
+    transition: 0.4s ease;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.next:hover {
+    color: black;
+    box-shadow: 0px 5px 10px #d4af3f;
+    transform: translateY(7px);
+}
+
+.next:focus {
+    outline: none;
+}
+
+#console:focus {
+    outline: none;
+}
+
+
+@media screen and (max-width:650px) {
+    input[type=text] {
+        font-size: 18px;
+    }
+
+    .part1,
+    .part2 {
+        font-size: 50px !important;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .btn-first {
+        padding: 30px;
+        font-size: 22px !important;
+    }
+
+    /*  #startScreen {
+        top: 50%;
+    } */
+}
+
+@media screen and (max-width:500px) {
+
+    .btn-first {
+        padding: 28px;
+        font-size: 22px !important;
+    }
+
+}

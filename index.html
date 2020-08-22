@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@600&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lemonada:wght@600&family=Sriracha&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="container-fluid main">
+        <div class="quiz">
+            <div class="">
+                <h1 class=""><span class="part1">quiz</span><span class="part2">App</span></h1>
+            </div>
+            <!-- <div class="">
+                <h1>00:00</h1>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="container" id="startScreen">
+        <form onsubmit="first1(event)">
+            <div class="form-group col col-lg-5 col-md-7 col-sm-10 mx-auto">
+                <input required autocomplete="off" id="name" type="text" class="name form-control"
+                    placeholder="Enter Your Name!">
+            </div>
+            <div id="btndiv" class="col col-lg-5 col-md-7 col-sm-10 mx-auto row">
+                <button type="submit" class="mt-3 btn btn-outline-warning mx-auto btn-first">Start</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <div class="container mt-5">
+            <div class="row">
+                <h3 class="mx-auto">Let's Start</h3>
+            </div>
+            <div class="row">
+                <button class="mx-auto btnStart btn btn-outline-info w-50" onclick="start1()">Start</button>
+            </div>
+        </div> -->
+
+    <div class="container-fluid choices">
+        <!-- <h3 class="text-center">What is The Name of President of Pakistan</h3>
+            <ul class="questions mt-4">
+                <li class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto option">Option1</li>
+                <li class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto option">Option2</li>
+                <li class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto option">Option3</li>
+                <li class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto option">Option4</li>
+            </ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <button class="col-lg-6 col-md-8 col-sm-10 col-12 mx-auto next">Next</button>
+                </div>
+            </div> -->
+    </div>
+
+    <!-- <div class="container mt-5">
+        <div class="col col-lg-5 col-md-7 col-sm-12 mx-auto row">
+            <button class="end w-100">try again</button>
+        </div>
+        <div class="mt-3 col col-lg-5 col-md-7 col-sm-12 mx-auto row">
+            <button class="end w-100">Back to home</button>
+        </div>
+    </div> -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="es6.js"></script>
+    <!-- <script src="jquery-3.5.1.js"></script>
+    <script src="bootstrap.bundle.min.js"></script> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

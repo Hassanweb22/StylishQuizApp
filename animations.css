@@ -1,0 +1,157 @@
+.query h3 {
+    animation-name: heading;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.56, 0.16, 0, 1.5);
+}
+
+@keyframes heading {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* now we are applying keframes animation on every <li> tag seprately */
+
+.li1 {
+    transition-duration: 0.5s;
+    animation-name: li1;
+    animation-duration: 0.45s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.li2 {
+    transition-duration: 0.5s;
+    animation-name: li2;
+    animation-duration: 0.45s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-in; */
+    opacity: 0;
+}
+
+.li3 {
+    transition-duration: 0.5s;
+    animation-name: li3;
+    animation-duration: 0.45s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-in; */
+    opacity: 0;
+}
+
+.li4 {
+    transition-duration: 0.5s;
+    animation-name: li4;
+    animation-duration: 0.45s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    /* animation-timing-function: ease-in; */
+    opacity: 0;
+}
+
+@keyframes li1 {
+    0% {
+        transform: translatex(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes li2 {
+    0% {
+        transform: translatex(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes li3 {
+    0% {
+        transform: translatex(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+@keyframes li4 {
+    0% {
+        transform: translatex(-200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+.last {
+    animation-name: last;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes last {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+.lastbutton1 {
+    animation-name: last1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.56, 0.16, 0, 1.8);
+    opacity: 0;
+}
+
+.lastbutton2 {
+    opacity: 0;
+    animation-name: last2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.56, 0.16, 0, 1.8);
+}
+
+
+@keyframes last1 {
+    0% {
+        transform: translatex(-200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0)
+    }
+}
+
+@keyframes last2 {
+    0% {
+        transform: translatex(200px)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translatex(0)
+    }
+}
